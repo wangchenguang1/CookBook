@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">小孟菜谱</string>
+    <string name="api_key">"09b836726e8224a7abfe31b82129ddbf"</string>
+    <string name="name_url">http://apis.baidu.com/tngou/cook/name</string>
+    <string name="detail_url">http://apis.baidu.com/tngou/cook/show</string>
+    <string name="list_url">http://apis.baidu.com/tngou/cook/list</string>
+    <string name="classify_url">http://apis.baidu.com/tngou/cook/classify</string>
+</resources>
+
+
+

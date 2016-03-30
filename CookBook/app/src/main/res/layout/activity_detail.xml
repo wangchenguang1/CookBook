@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.example.wcg.cookbook.View.CKEmptyView
+        android:id="@+id/emptyView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        >
+    </com.example.wcg.cookbook.View.CKEmptyView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="1500dp"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:text="Large Text"-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_gravity="center_vertical" />-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:id="@+id/imageView"
+                android:scaleType="fitXY"
+
+
+                />
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/name"
+                android:text="美食"
+                android:textColor="@color/colorBlack"
+                android:textSize="22dp"
+                android:maxLines="2"
+                />
+
+            <LinearLayout
+                android:id="@+id/count"
+                android:layout_below="@+id/name"
+                android:layout_alignParentLeft="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+
+                    android:background="@color/colorWhite"
+                    android:id="@+id/count1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+
+                    android:background="@color/colorWhite"
+                    android:id="@+id/count2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+
+                    android:background="@color/colorWhite"
+                    android:id="@+id/count3"
+                    />
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/descrption"
+                android:layout_below="@+id/count"
+                android:layout_alignParentLeft="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/colorWhite"
+
+                />
+
+            <TextView
+                android:id="@+id/dashLine"
+                android:gravity="center"
+                android:background="@drawable/dash_gap"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/descrption"
+                android:layerType="software"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/msg"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/dashLine"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+            </TextView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
